@@ -1,0 +1,25 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Local demo state and uploaded documents
+data/clearmatch.db
+data/clearmatch.db-*
+data/documents/
+
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

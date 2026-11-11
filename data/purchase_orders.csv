@@ -1,0 +1,6 @@
+po_number,vendor_id,vendor_name,po_amount,currency,status,tolerance_pct
+PO-1001,V-001,Northstar Supplies,60000,INR,ACTIVE,2
+PO-1002,V-002,Apex Industrial,100000,INR,ACTIVE,2
+PO-1003,V-003,Bluepeak Technologies,85000,INR,ACTIVE,2
+PO-1004,V-004,Metro Office Systems,45000,INR,CLOSED,2
+PO-1005,V-005,Greenfield Packaging,120000,INR,ACTIVE,1.5

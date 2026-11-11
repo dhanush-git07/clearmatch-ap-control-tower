@@ -1,0 +1,33 @@
+ClearMatch V4.1 automated test results
+======================================
+
+Command:
+  .venv\\Scripts\\python.exe -m unittest discover -s tests -v
+
+Result:
+  30 tests passed
+  0 failures
+  0 errors
+
+Coverage includes:
+- Happy path, duplicate, split PO exposure, missing required fields, closed PO
+- LLM response parsing, source evidence grounding, hallucinated date rejection
+- Provider selection, API failure fallback and secret redaction
+- Alternative invoice layouts, arithmetic mismatch, wrong vendor, currency mismatch
+- OCR, unreadable PDF handling, source PDF retention
+- Human review eligibility, approval/rejection, database migration
+- Batch split-invoice sequencing, bad-file isolation, same-batch duplicate detection
+
+V4.1 UI refinements:
+- Exception Desk labels and empty-state clarity
+- Dynamic table heights in exception and ledger views
+- Compact Run Ledger columns and zero-result feedback
+- PO exposure chart limited to active exposure while full PO register remains visible
+- Tolerance headroom displayed in the PO register
+- Local filesystem paths hidden from Policy & System diagnostics
+- API configured state clearly distinguished from live verification
+
+Important verification limits:
+- LLM API tests use mocked provider responses; live API connectivity is not asserted.
+- The Streamlit interactive UI was not launched in this build container. Run the Windows UI smoke-test checklist before deployment or submission.
+- No public deployment was performed.
